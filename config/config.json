@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "misite-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/misite/MisiteWebPart.js",
+          "manifest": "./src/webparts/misite/MisiteWebPart.manifest.json"
+        }
+      ]
+    },
+    "misite-2-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/misite2/Misite2WebPart.js",
+          "manifest": "./src/webparts/misite2/Misite2WebPart.manifest.json"
+        }
+      ]
+    },
+    "miextension-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/miextension/MiextensionApplicationCustomizer.js",
+          "manifest": "./src/extensions/miextension/MiextensionApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MisiteWebPartStrings": "lib/webparts/misite/loc/{locale}.js",
+    "Misite2WebPartStrings": "lib/webparts/misite2/loc/{locale}.js",
+    "MiextensionApplicationCustomizerStrings": "lib/extensions/miextension/loc/{locale}.js"
+  }
+}
